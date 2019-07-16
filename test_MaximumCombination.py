@@ -11,6 +11,7 @@ class test_MaximumCombination(TestCase):
     }
 
     def test_ValuesExists(self):
+
         kys = [
             "A.C",
             "A.B",

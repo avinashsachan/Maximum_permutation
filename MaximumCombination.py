@@ -1,9 +1,11 @@
-#!/bin/env python
-from queue import Queue
 import json
-
+try:
+    from Queue import Queue
+except:
+    from queue import Queue
 
 class MaximumCombination():
+
     def __init__(self, keys, value):
         self.values = value
         self.keys = keys
@@ -15,9 +17,7 @@ class MaximumCombination():
         if k not in j:
             j[k] = {}
         if q.qsize() > 0:
-            j1 = j[k]
-            # print(j1)
-            self._genStairCaseFull(j1, q)
+            self._genStairCaseFull(j[k], q)
 
     def getHash(self):
 
