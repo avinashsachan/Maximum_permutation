@@ -3,7 +3,7 @@ from queue import Queue
 import json
 
 
-class MaximumPermutationCounter():
+class MaximumCombination():
     def __init__(self, keys, value):
         self.values = value
         self.keys = keys
@@ -35,6 +35,7 @@ class MaximumPermutationCounter():
 
         self.js = self.getHash()
         self._pushParameter(self.js)
+        self.js["total"] = 0
         return self.js
 
     def _pushParameter(self,js):
@@ -46,7 +47,7 @@ class MaximumPermutationCounter():
                 ks = json.dumps(js[k])
 
                 n = {}
-                for x in values[k]:
+                for x in self.values[k]:
                     n[x] = json.loads(ks)
                     n[x]["total"] = 0
 
@@ -61,24 +62,3 @@ class MaximumPermutationCounter():
                     print(i, " not in values")
                     raise Exception("value not found")
 
-
-
-if __name__ == "__main__":
-
-    values = {
-        "A": ["1", "2"],
-        "B": ["X", "Y"],
-        "C": ["Yes", "No"]
-    }
-
-    kys = [
-        "A.C",
-        "A.B",
-    ]
-
-    m = MaximumPermutationCounter(kys,values)
-    js = m.getValueHash()
-
-
-    with open("base.json", "w") as f:
-        f.write(json.dumps(js))
