@@ -7,6 +7,7 @@ except:
 class MaximumCombination():
 
     def __init__(self, keys, value):
+        # type: (object, object) -> object
         self.values = value
         self.keys = keys
         self.js = {}

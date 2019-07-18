@@ -1,1 +1,93 @@
-{"A": {"C": {}, "B": {}}}
+{
+  "A": {
+    "1": {
+      "total": 3,
+      "C": {
+        "Yes": {
+          "total": 1
+        },
+        "total": 3,
+        "No": {
+          "total": 2
+        }
+      },
+      "B": {
+        "Y": {
+          "C": {
+            "Yes": {
+              "total": 0
+            },
+            "total": 1,
+            "No": {
+              "total": 1
+            }
+          },
+          "total": 1
+        },
+        "X": {
+          "C": {
+            "Yes": {
+              "total": 1
+            },
+            "total": 2,
+            "No": {
+              "total": 1
+            }
+          },
+          "total": 2
+        },
+        "total": 3
+      }
+    },
+    "total": 4,
+    "2": {
+      "total": 1,
+      "C": {
+        "Yes": {
+          "total": 0
+        },
+        "total": 1,
+        "No": {
+          "total": 1
+        }
+      },
+      "B": {
+        "Y": {
+          "C": {
+            "Yes": {
+              "total": 0
+            },
+            "total": 1,
+            "No": {
+              "total": 1
+            }
+          },
+          "total": 1
+        },
+        "X": {
+          "C": {
+            "Yes": {
+              "total": 0
+            },
+            "total": 0,
+            "No": {
+              "total": 0
+            }
+          },
+          "total": 0
+        },
+        "total": 1
+      }
+    }
+  },
+  "total": 4,
+  "B": {
+    "Y": {
+      "total": 2
+    },
+    "X": {
+      "total": 2
+    },
+    "total": 4
+  }
+}
